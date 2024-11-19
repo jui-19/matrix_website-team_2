@@ -1,0 +1,138 @@
+/* General Reset */
+body, h1, p, ul, nav, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    color: #00ff00;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #00ff00;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.nav-link {
+    color: #00ff00;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00ff00;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Section Styling */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-home {
+    background: transparent;
+}
+
+.section-about, .section-coding {
+    background: linear-gradient(135deg, #001a00, #000);
+}
+
+/* Glow Text */
+.glow-text {
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    color: #aaffaa;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #000;
+    background: #00ff00;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Matrix List */
+.matrix-list li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    color: #aaffaa;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    text-align: center;
+    padding: 10px;
+    color: #aaffaa;
+    font-size: 0.9rem;
+    border-top: 2px solid #00ff00;
+}
